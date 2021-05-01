@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>	
+
+	
+	<style>
+		#grid {
+			border:5px solid pink;
+			display:grid;
+		/*grid template에서 n..는 150px의 공간을, a..는 나머지 공간을 사용한다는 뜻이다.*/
+		/*2fr 1fr을 사용할 경우 2대1 비율의 길이로 등분*/
+			grid-template-columns: 150px 1fr;
+		}
+		div {
+			border:3px solid gray;
+		}
+	</style>
+</head>
+<body>
+	<!--div와 span은 의미도 없고 기능도 없는 감싸기 위한 태그-->
+	<div id="grid">
+		<div>NAVIGATION</div>
+		<div>ARTICLE</div>
+	</div>
+	<span>span tag</span>
+	<span>doesn't make new line</span>
+</body>
+</html>
